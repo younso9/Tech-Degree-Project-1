@@ -48,7 +48,7 @@ var quotes = [{
 }];
 
 // This FUNCTION was declared and named `randomNum` to generate a number between 0 - 255.
-function randomNum() {
+  function randomNum() {
   return Math.floor(Math.random() * 256)
 }
 
@@ -57,7 +57,7 @@ function randomNum() {
  the array in a random order.
 */
 
-function getRandomQuote(quotes) {
+  function getRandomQuote(quotes) {
   var randomQuotesNumber = Math.floor(Math.random() * quotes.length);
   var randomQuote = quotes[randomQuotesNumber]
   return randomQuote;
@@ -73,11 +73,11 @@ This section:
  - The `innerHTML` of the `quote-box` div was added to the HTML string. 
 */
 
-function refresh() {
+  function refresh() {
   var timer = setInterval(printQuote, 2000);
 }
 
-function printQuote() {
+  function printQuote() {
   var randomQuote = getRandomQuote(quotes);
   var message = " ";
   message += "<p class='quote'>" + randomQuote.quote + '</p>';
@@ -114,13 +114,13 @@ function printQuote() {
 }
 
 //This function finds the element by "id".
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+  document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 //Calls the `printQuote` function.
-printQuote ()
+  printQuote ()
 
 //Calls the `refresh` function.
-refresh();
+  refresh();
 
 
 // The End
